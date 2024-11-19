@@ -9,9 +9,9 @@ on:
 jobs:
   build:
     name: Build wxPython
-    runs-on: macos-latest
-    if: github.repository_owner == 'dortania'
-
+    runs-on: self-hosted
+             macos
+    if: github.repository_owner == 'jackblanket847'
     env:
       # GitHub Information
       branch: ${{ github.ref }}
